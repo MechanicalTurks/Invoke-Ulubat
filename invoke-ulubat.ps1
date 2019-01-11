@@ -5,7 +5,7 @@
 		[Parameter(Mandatory = $True)]
 		[ValidateScript({
 				if (-not ($_ | Test-Path -PathType Leaf)) {
-					throw "PowerShell Script does not exist"
+					throw "PowerShell script does not exist"
 				}
 				return $True
 			})]
