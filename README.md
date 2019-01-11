@@ -18,8 +18,8 @@ Invoke-Ulubat -FilePath .\Samples\sample-001.ps1 -OutFilePath .\Samples-Deobfusc
 ```
 
 # Authors
-Furkan Özer ([@frknozr](https://twitter.com/frknozr))
-Muhammed Kaplangöz ([@kaplangozm](https://twitter.com/kaplangozm))
+Furkan Özer ([@frknozr](https://twitter.com/frknozr))  
+Muhammed Kaplangöz ([@kaplangozm](https://twitter.com/kaplangozm))  
 Ugur ERCAN ([@ugur__ercan](https://twitter.com/ugur__ercan))
 
 # Contributions
