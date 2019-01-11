@@ -28,7 +28,7 @@ Muhammed Kaplangöz ([@kaplangozm](https://twitter.com/kaplangozm))
 Ugur ERCAN ([@ugur__ercan](https://twitter.com/ugur__ercan))
 
 # Contributions
-If you detect any error or have any suggestion, Please file an issue.
+If you detect any error or have any suggestion, please create an issue.
 
 # Credits
 Module used [PowerShell-Beautifier](https://github.com/DTW-DanWard/PowerShell-Beautifier) by Dan Ward
