@@ -34,6 +34,8 @@
 
     Write-Host $startText
 
+    Write-Host $version"`n`n"
+
     $startedTime = Get-Date
 
     $progressCounter = 0
