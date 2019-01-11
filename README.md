@@ -4,7 +4,7 @@ Invoke-Ulubat is a PowerShell command and script deobfuscator.
 
 # Warning
 
-Please use in the **Test Environment.** Invoke-Ulubat can execute malicious scripts.
+Please use in the **Test Environment.** Invoke-Ulubat can execute malicious scripts. It is only works in Windows operating systems.
 
 # Installation
 ```
