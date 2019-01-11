@@ -23,9 +23,9 @@ Invoke-Ulubat -FilePath .\obfuscated.ps1 -OutFilePath .\deobfuscated.ps1 -Execut
 **Note:** Remove *powershell* or *powershell -exec bypass* etc. from the begining of the obfuscated file.
 
 # Authors
-Furkan Özer ([@frknozr](https://twitter.com/frknozr))  
-Muhammed Kaplangöz ([@kaplangozm](https://twitter.com/kaplangozm))  
 Ugur ERCAN ([@ugur__ercan](https://twitter.com/ugur__ercan))
+Muhammed Kaplangöz ([@kaplangozm](https://twitter.com/kaplangozm))
+Furkan Özer ([@frknozr](https://twitter.com/frknozr))  
 
 # Contributions
 If you detect any error or have any suggestion, please create an issue.
