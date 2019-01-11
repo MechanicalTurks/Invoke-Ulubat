@@ -20,7 +20,7 @@ Invoke-Ulubat -FilePath .\obfuscated.ps1 -OutFilePath .\deobfuscated.ps1 -Execut
 **-OutFilePath :** Deobfuscated Script Path  
 **-Execute** Allow Execute for Deobfuscation. (Optional but recommended) 
 
-**Note:** Remove *powershell* or *powershell -exec bypass* etc. from the begin of the obfuscated file.
+**Note:** Remove *powershell* or *powershell -exec bypass* etc. from the begining of the obfuscated file.
 
 # Authors
 Furkan Özer ([@frknozr](https://twitter.com/frknozr))  
