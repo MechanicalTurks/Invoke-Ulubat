@@ -14,11 +14,12 @@ Import-Module -Name ./invoke-ulubat.ps1
 
 # Usage
 ```
-Invoke-Ulubat -FilePath .\obfuscated.ps1 -OutFilePath .\deobfuscated.ps1 -Execute
+Invoke-Ulubat -FilePath .\obfuscated.ps1 -OutFilePath .\deobfuscated.ps1 -Execute -StepByStep
 ```
 **-FilePath :** Obfuscated PowerShell Script Path  
 **-OutFilePath :** Deobfuscated Script Path  
-**-Execute** Allow Execute for Deobfuscation. (Optional but recommended) 
+**-Execute** Allow Execute for Deobfuscation. (Optional but recommended)  
+**-StepByStep** Step By Step Deobfuscation.
 
 **Note:** Remove *powershell* or *powershell -exec bypass* etc. from the begining of the obfuscated file.
 
@@ -31,7 +32,3 @@ Furkan Özer ([@frknozr](https://twitter.com/frknozr))
 
 # Contributions
 If you detect any error or have any suggestion, please create an issue.
-
-# Credits
-Module used [PowerShell-Beautifier](https://github.com/DTW-DanWard/PowerShell-Beautifier) by Dan Ward
-

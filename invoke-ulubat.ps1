@@ -11,11 +11,12 @@
 			})]
 		[System.IO.FileInfo]$FilePath,
 		[System.IO.FileInfo]$OutFilePath,
-        [Switch]$Execute
+        [Switch]$Execute,
+        [Switch]$StepByStep
 	)
 
 
-    $version = "v0.1Beta"
+    $version = "v0.2Beta"
     $title = "Ulubat PowerShell Script Deobfuscator $version"
 
     $startText = @'
@@ -138,7 +139,18 @@
                 $item = $item -replace "^[.|&;]",""
                 $tempiexdetectdata = ""
 		        try {
-			        $dist = Invoke-Expression $item -OutVariable tempiexdetectdata
+                    if ($StepByStep) {
+                        Write-Host $PSData
+                        $nextStepAnswer = Read-Host "Do you want to continue to next step?(Yes/No)"
+                        if ($nextStepAnswer -ne "Yes" -and -$nextStepAnswer -ne "y") {
+                            break;
+                        }
+                    } 
+                    if ($Execute) {
+                        $dist = Invoke-Expression $item -OutVariable tempiexdetectdata    
+                    }
+                    
+			        
 		        } catch {}
 		        if ($tempiexdetectdata -eq "iex") {
 			        $PSData = $PSData.Replace($item,"iex")
@@ -338,6 +350,10 @@
 		$OutFilePath = ($FilePath | Split-Path -Resolve) + "\" + ($FilePath | Split-Path -Leaf).Split(".")[-2] + "-_deobout." + ($FilePath | Split-Path -Leaf).Split(".")[-1]
 	}
 
+    if ($StepByStep) {
+        Write-Host $PSData
+    }
+
     # Write PS File
 	$PSData | Out-File -FilePath $OutFilePath
     
@@ -355,12 +371,6 @@
         Write-Host "Could not deobfuscate script. Debug file written into output file directory."
     } elseif ($firstPSData -eq $PSData -and -not $Execute) {
         Write-Host "Could not deobfuscate script. Execute Enable and Try again."
-    } else {
-        try {
-		    Import-Module -Name ($PSScriptRoot + "\PowerShell-Beautifier\PowerShell-Beautifier.psd1")
-		    $PSData = Edit-DTWBeautifyScript $OutFilePath -IndentType Tabs
-	    }
-	    catch { }
     }
 
     $finisedTime = Get-Date
