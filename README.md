@@ -26,7 +26,7 @@ Invoke-Ulubat -FilePath .\obfuscated.ps1 -OutFilePath .\deobfuscated.ps1 -Execut
 ![Invoke-Ulubat](/Media/Invoke-Ulubat.gif "Invoke-Ulubat")
 
 # Authors
-Ugur ERCAN ([@ugur__ercan](https://twitter.com/ugur__ercan))    
+Ugur ERCAN ([@_ugurercan](https://twitter.com/_ugurercan))    
 Muhammed Kaplangöz ([@kaplangozm](https://twitter.com/kaplangozm))  
 Furkan Özer ([@frknozr](https://twitter.com/frknozr))  
 
