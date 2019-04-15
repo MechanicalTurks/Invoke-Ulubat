@@ -111,7 +111,7 @@
 
 		# base64 decode
 		try {
-			[Text.Encoding]::Unicode.GetString([Convert]::FromBase64String($PSData))
+			$PSData = [Text.Encoding]::Unicode.GetString([Convert]::FromBase64String($PSData))
 			$DataChanged = $True
 		} catch {}
 
